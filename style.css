@@ -1,0 +1,29 @@
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .col-6 img {
+        animation: rotate 5s linear infinite;
+    }
+}
+
+/* For tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .col-6 img {
+        animation: rotate 8s linear infinite;
+    }
+}
+
+/* For desktop */
+@media screen and (min-width: 1025px) {
+    .col-6 img {
+        animation: rotate 10s linear infinite;
+    }
+}
